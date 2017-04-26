@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b799d5e-fd5a-40e3-8e96-414955b2b798" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/STEP1_generateDataSet.py" afterPath="$PROJECT_DIR$/STEP1_generateDataSet.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/STEP2_generatePrediction.py" afterPath="$PROJECT_DIR$/STEP2_generatePrediction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="STEP1_generateDataSet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/STEP1_generateDataSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="1110">
+              <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
               <folding>
                 <element signature="e#1#43#0" expanded="true" />
               </folding>
@@ -48,8 +47,8 @@
       <file leaf-file-name="STEP2_generatePrediction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/STEP2_generatePrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+            <state relative-caret-position="692">
+              <caret line="98" column="73" lean-forward="false" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
               <folding>
                 <element signature="e#1#33#0" expanded="true" />
               </folding>
@@ -74,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/initLook.py" />
         <option value="$PROJECT_DIR$/initNeuralNet.py" />
-        <option value="$PROJECT_DIR$/STEP2_generatePrediction.py" />
         <option value="$PROJECT_DIR$/STEP1_generateDataSet.py" />
+        <option value="$PROJECT_DIR$/STEP2_generatePrediction.py" />
       </list>
     </option>
   </component>
@@ -383,8 +382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/STEP2_generatePrediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state relative-caret-position="692">
+          <caret line="98" column="73" lean-forward="false" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
           <folding>
             <element signature="e#1#33#0" expanded="true" />
           </folding>
@@ -393,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/STEP1_generateDataSet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="1110">
+          <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
           <folding>
             <element signature="e#1#43#0" expanded="true" />
           </folding>
