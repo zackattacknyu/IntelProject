@@ -7,7 +7,7 @@ import os
 
 from keras.applications.vgg19 import VGG19
 from scipy.misc import imresize
-
+import cv2
 
 wholeVGGnetwork = VGG19(include_top=True, weights='imagenet', input_tensor=None, input_shape=None)
 vggNetwork4096Output = Model(input=wholeVGGnetwork.input,output=wholeVGGnetwork.get_layer('fc2').output)
@@ -38,6 +38,8 @@ for dirName in trainDirectories:
 
 print("Reading testing files")
 testFiles = obtainJPGfileList(os.path.join(testDirectory))
+#np.save('XTestFileNames.npy',testFiles)
+
 numTestFiles = len(testFiles)
 
 numTotalTrainFiles = np.sum(numFilesEachType)
@@ -51,7 +53,7 @@ def getVGGoutput(currentFilePath):
     resizedCervixImage = np.zeros(vggImgSize)
     for jj in range(3):
         img = currentCervixImage[:, :, jj]
-        imgResized = imresize(img, vggImgSizeChannel)
+        imgResized = cv2.resize(img, vggImgSizeChannel)
         resizedCervixImage[0,jj, :, :] = imgResized
     return vggNetwork4096Output.predict(resizedCervixImage)
 
@@ -62,6 +64,7 @@ for typeI in range(3):
     for fileNm in trainFilesCurType:
         print('Generating features for file ' + str(ind+1) + ' of ' + str(numTotalTrainFiles))
         currentFilePath = os.path.join(trainDirectory,typeDirNames[typeI],fileNm)
+        print(currentFilePath)
         XTrain[ind,:] = getVGGoutput(currentFilePath)
         YTrain[ind] = typeI
         ind = ind + 1
@@ -78,3 +81,4 @@ for fileNm in testFiles:
 np.save('xTrain4096Output.npy',XTrain)
 np.save('xTest4096Output.npy',XTest)
 np.save('yTrain.npy',YTrain)
+
